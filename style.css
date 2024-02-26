@@ -1,0 +1,142 @@
+/* Paleta de colores */
+:root {
+  --primary-color: #355971; /* Azul */
+  --secondary-color: #844b45; /* Rojo */
+  --accent-color: #3f9e67; /* Verde */
+  --background-color: #ecf0f1; /* Gris claro */
+  --text-color: #34495e; /* Texto principal */
+  --heading-color: #2c3e50; /* Color de encabezados */
+  --border-color: #bdc3c7; /* Color del borde */
+}
+/* * {
+  border: thin solid var(--border-color);
+} */
+
+html {
+  scroll-behavior: smooth;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: medium;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: -1vh;
+  height: 10vh;
+  /* overflow: hidden; */
+  background-color: var(--primary-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+header img {
+  object-fit: contain;
+  max-height: 12vh;
+  width: auto;
+}
+header img:hover {
+  cursor: pointer;
+  transform: scale(1.35);
+}
+
+nav {
+  display: flex;
+  gap: 5vw;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 2px 2px black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2ecc71;
+  transform: scale(1.1);
+}
+
+body.scrolled header {
+  background-color: #1f3c5051;
+}
+.title {
+  background-color: var(--secondary-color);
+}
+main {
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: 8vw;
+  margin-bottom: 2vh;
+  animation: desplazamiento 8s linear infinite;
+  white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+  overflow: hidden; /* Ocultar el texto que se desborda */
+}
+@keyframes desplazamiento {
+  0% {
+    transform: translateX(0);
+  }
+  55% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  95% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+h1:hover {
+  color: #2ecc71;
+  text-decoration: underline;
+}
+
+.section {
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5vw;
+  background-color: var(--background-color);
+}
+
+.card {
+  border: medium solid rgba(0, 0, 0, 0.624);
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: #fff;
+}
+.card:hover {
+  color: #2ecc71;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card img {
+  object-fit: contain;
+  max-height: 40vh;
+  width: auto;
+}
+
+.rate {
+  margin: auto;
+  max-width: 20%;
+  background-color: #bdc3c7;
+  border: thin solid var(--border-color);
+  border-radius: 25%;
+  color: green;
+}
+.rate:hover {
+  transform: scale(1.1);
+}
