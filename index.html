@@ -4,34 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShowFilms</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="Assets/Show Films.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
-      <img
-        src="Resoruces/1-Photoroom.png-Photoroom.png"
-        alt="Logo de ShowFilms"
-      />
+      <img src="Assets/Show Films.png" alt="Logo de ShowFilms" />
       <nav>
         <a
           href="https://vldemenezes.github.io/template-rs-m1-b/"
           target="_blank"
         >
-          About
+          Mi pagina Web
         </a>
-        <a href=""> Films Refers</a>
-        <a href=""> Other Projects </a>
+        <a href="OtherProjects/index.html" target="_blank"> Mi GitHub</a>
+        <a href="" target="_blank"> Other Projects </a>
       </nav>
     </header>
     <main>
-      <div class="title"><h1>ShowFilms</h1></div>
-      <section id="section" class="section"></section>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="title"><h1 id="h1">ShowFilms</h1></div>
+      <div>
+        <h2 class="sectionTitle">Peliculas Locales</h2>
+        <section id="sectionLocal" class="section"></section>
+      </div>
+      <div>
+        <h2 class="sectionTitle">Peliculas del Server</h2>
+        <section id="sectionServer" class="section"></section>
+      </div>
     </main>
-    <footer></footer>
-    <script src="teamData.js"></script>
-    <script src="index.js"></script>
+    <footer class="footer">
+      Diseñado por Victor L. Menezes, © derechos reservados y correspondientes.
+    </footer>
+    <script src="scripts/tempData.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
