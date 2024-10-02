@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      h2:hover {
+        letter-spacing: 0.15rem;
+        text-decoration: underline;
+      }
+      p {
+        font-size: 1.5rem;
+        font-family: "Franklin Gothic Medium";
+        letter-spacing: 0.15rem;
+      }
+      p:hover {
+        color: rgba(0, 0, 0, 0.5);
+        margin-left: 1.5rem;
+      }
+      .foto {
+        max-height: 30vh;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body id="inicio">
+    <nav class="bg-light">
+      <h1 class="text-white bg-dark px-5 rounded-bottom">About me</h1>
+      <ul class="nav justify-content-end mx-5">
+        <li class="nav-item">
+          <a
+            id="about"
+            class="btn btn-outline-secondary shadow rounded m-1"
+            href="../index.html"
+            >ShowFilms</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            id="myFav"
+            class="btn btn-outline-secondary shadow rounded m-1"
+            href="myFav.html"
+            >My Favorites Films</a
+          >
+        </li>
+        <li class="nav-item" id="ester">
+          <a
+            class="btn btn-outline-secondary shadow rounded m-1 disabled"
+            href="otherPj.html"
+            >EsterEgg</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main class="m-3">
+      <section class="container bg-light p-3">
+        <article class="rounded border p-3">
+          <h2 class="font-weight-bold text-center text-secondary">
+            Mi historia
+          </h2>
+          <div class="media text-center">
+            <img
+              class="foto mr-3"
+              src="https://misiones.gob.ar/wp-content/uploads/2017/03/misiones.gif"
+              alt="Mapa de Misiones, Argentina"
+            />
+            <div class="media-body">
+              <p class="my-5">Soy un joven nacido en Misiones, Argentina</p>
+            </div>
+          </div>
+          <div class="media text-center">
+            <div class="media-body">
+              <p class="my-5">Me recibi de Abogado y trabajo de ello</p>
+            </div>
+            <img
+              class="foto ml-3"
+              src="https://www.cademis.org.ar/images/2023/02/25/victor-leandro-de-menezes---vicepresidente.jpg"
+              alt="Foto   de Victor como abogado"
+            />
+          </div>
+          <div class="media text-center">
+            <img
+              class="foto mr-3"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-quq0dGk6EFvv7dY5skf_KyMOHaJf4ESWld6pCagziv9y_RiyGHkmwva-8zhjimulwe8&usqp=CAU"
+              alt=""
+            />
+            <p class="my-5">
+              Soy amante del voluntariado y Vicepresidente del Foro de ODS
+              Misiones
+            </p>
+          </div>
+          <div class="media text-center">
+            <div class="media-body">
+              <p class="my-5">
+                Sin embargo, siempre tuve afición por la Programación y el
+                desarrollo Web, hoy estoy aprendiendo ello en:
+              </p>
+            </div>
+            <img
+              class="foto"
+              src="https://startupeable.com/directorio/wp-content/uploads/2021/03/d4face92a7abc37a414e0bc3acf4ff23ec588438.png"
+              alt="Logo Soy Henry"
+            />
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="container-fluid bg-light rounded-top text-center">
+      Diseñado por
+      <span href="#aboutMe" class="font-weight-bold">Victor L. De Menezes</span>
+      , © derechos reservados y correspondientes.
+      <a href="#inicio" class="btn btn-info mx-5 my-1">Go up!</a>
+    </footer>
+  </body>
+</html>

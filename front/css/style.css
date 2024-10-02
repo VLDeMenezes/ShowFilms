@@ -1,0 +1,159 @@
+/* Clases personalizadas */
+.cardSize {
+  width: 22rem;
+}
+.cardSize:hover {
+  color: rgba(160, 192, 182, 0.832);
+  background-color: rgba(42, 51, 105, 0.762);
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  cursor: pointer;
+}
+
+.cardSize img {
+  max-height: 20rem;
+  object-fit: contain !important;
+}
+.opa {
+  background-color: rgba(110, 168, 168, 0.735);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.higthtext:hover {
+  color: rgba(110, 152, 152, 0.934) !important;
+  font-style: italic;
+}
+.navLogo {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  overflow: auto;
+  max-height: 15vh;
+}
+
+.max-width-modal {
+  max-width: 45vw;
+}
+.max-width-modal img {
+  max-height: 65vh;
+}
+
+.progress-bar {
+  background-color: #1a1a1a;
+  height: 45px;
+  width: 450px;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.stripes {
+  background-size: 30px 30px;
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.stripes.animated {
+  animation: animate-stripes 0.6s linear infinite;
+}
+
+.progress-bar-inner {
+  display: block;
+  height: 45px;
+  width: 0%;
+  background-color: #34c2e3;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  position: relative;
+  animation: auto-progress 5s infinite linear;
+}
+/* evento loader */
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 0;
+  }
+}
+@keyframes auto-progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* evento title */
+@media (min-width: 1000px) {
+  .navLogo {
+    /* overflow: hidden; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: #1a1a1a 0px 1px 5px;
+  }
+  .max-width-modal {
+    max-width: 35vw;
+  }
+  .max-width-modal img {
+    max-height: 45vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    display: none;
+  }
+  @keyframes desplazamiento {
+    0% {
+      transform: translateX(-400%);
+    }
+    100% {
+      transform: translateX(400%);
+    }
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

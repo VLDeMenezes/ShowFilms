@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShowFilms</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="Assets/Show Films.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body id="inicio" class="bg-dark">
+    <nav class="bg-light navLogo rounded-bottom p-2">
+      <h1 class="text-white bg-dark px-5 rounded higthtext">ShowFilms</h1>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a
+            id="about"
+            class="btn btn-outline-secondary shadow rounded m-1"
+            href="Pages/about.html"
+            >About me</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            id="myFav"
+            class="btn btn-outline-secondary shadow rounded m-1"
+            href="Pages/myFav.html"
+            >My Favorites Films</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            id="newFilm"
+            class="btn btn-outline-secondary shadow rounded m-1"
+            href="Pages/createFilm.html"
+            >Create a New Film</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            id="ester"
+            class="btn btn-outline-secondary shadow rounded m-1 disabled"
+            href="Pages/otherPj.html"
+            >EsterEgg</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main class="container-fluid bg-dark p-2">
+      <div class="navbar justify-content-center">
+        <form class="d-flex w-50" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Buscar pelicula por titulo"
+            aria-label="Search"
+            id="searchNav"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            Reiniciar
+          </button>
+        </form>
+      </div>
+      <section
+        id="section"
+        class="rounded m-4 row justify-content-center opa"
+      ></section>
+    </main>
+
+    <footer class="container-fluid bg-light rounded-top text-center">
+      Diseñado por
+      <span href="#aboutMe" class="font-weight-bold">Victor L. De Menezes</span>
+      , © derechos reservados y correspondientes.
+      <a href="#inicio" class="btn btn-info mx-5 my-1">Go up!</a>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="public/bundle.js"></script>
+  </body>
+</html>
